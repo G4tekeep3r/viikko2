@@ -2,11 +2,36 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Viikko 2</title>
+    <style>
+        body {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: sans-serif;
+            line-height: 1.6;
+            background: #1e2530;
+            color: #f0f0f0;
+        }
+        h1, h2 { color: #4da6ff; }
+        a { color: #8cc8ff; }
+    </style>
 </head>
 <body>
     <h1>Viikko 2: Python-verkkosovellus</h1>
-    <p>Sivun latauksia: {{ kaynnit }}</p>
-    <p><a href="/">Viikon 1 etusivulle</a></p>
+    <p>Tämä sivu pyörii Flaskilla ja Gunicornilla Nginxin takana.</p>
+    <p>Sivun latauksia: <strong>{{ kaynnit }}</strong></p>
+
+    <h2>Tietokanta</h2>
+    <p>Laskuri tallennetaan MariaDB-tietokantaan (<code>laskuri</code>). Jokainen sivulataus kasvattaa arvoa yhdellä, ja arvo säilyy uudelleenkäynnistyksen yli.</p>
+
+    <h2>Uudelleenkäynnistystesti</h2>
+    <p>Testiä ei ole vielä tehty. Päivitän tähän tuloksen testauksen jälkeen.</p>
+
+    <p>
+        <a href="https://github.com/G4tekeep3r/viikko2">Projektin lähdekoodi GitHubissa</a><br>
+        <a href="/">Viikon 1 etusivu</a>
+    </p>
 </body>
 </html>
